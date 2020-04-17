@@ -14,7 +14,9 @@
         <div class="header">
             <div class="container">
                 <div class="nav-container">
-                    <!-- <a href="index.html" class="logo"><span>Jydon Mah</span></a> -->
+                    <a href="index.html" class="logo">
+                        <span>&lt;/JYDON&gt;</span>
+                    </a>
                     <nav class="menu-container">
                         <ul class="menu">
                             <li class="menu-item">
@@ -28,8 +30,26 @@
                             </li>
                         </ul>
                     </nav>
+                    <div class="mobile-menu-hamburger">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="mobile-menu">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#about">About</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#works">Works</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#footer">Contact</a>
+                </li>
+            </ul>
         </div>
         <section class="about">
             <div class="container">
@@ -49,5 +69,12 @@
                 </div>
             </div>
         </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $('.mobile-menu-hamburger').click(function(){
+                $(this).toggleClass('is-click');
+                $('.mobile-menu').toggleClass('is-click');
+            });
+        </script>
     </body>
 </html>
