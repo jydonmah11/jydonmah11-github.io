@@ -75,6 +75,16 @@
                 $(this).toggleClass('is-click');
                 $('.mobile-menu').toggleClass('is-click');
             });
+
+            $(window).scroll(function() {    
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 100) {
+                    $(".header").addClass("header-shadow-bottom");
+                }else{
+                    $(".header").removeClass("header-shadow-bottom");
+                }
+            });
         </script>
     </body>
 </html>

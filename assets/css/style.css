@@ -10233,7 +10233,8 @@ h1, h2, h3, h4, h5, p, .logo {
   width: 100%;
   position: fixed;
   z-index: 1000;
-  padding: 2.2rem 0;
+  padding: 1rem 0;
+  transition: all .3s ease;
 }
 
 .header-shadow-bottom{
@@ -10399,6 +10400,10 @@ h1, h2, h3, h4, h5, p, .logo {
 @media only screen and (min-width: 768px){
   .logo{
     display: none;
+  }
+
+  .header{
+    padding: 2.2rem 0;
   }
 
   .menu-container{
