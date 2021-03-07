@@ -10274,7 +10274,6 @@ h1, h2, h3, h4, h5, p, .logo {
   display: none;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -10428,6 +10427,10 @@ h1, h2, h3, h4, h5, p, .logo {
 
   .about{
     padding: 0;
+  }
+  
+  .menu-container{
+    display: flex;
   }
 
   .about-holder{
