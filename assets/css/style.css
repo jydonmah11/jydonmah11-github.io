@@ -10242,7 +10242,7 @@ h1, h2, h3, h4, h5, p, .logo {
   box-shadow: 0 2px 40px #dedde6;
 }
 
-.logo{
+.logo, .wide-logo{
   width: 15rem;
   color: #222;
   font-size: 1.4rem;
