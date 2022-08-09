@@ -20,13 +20,16 @@
                     <a href="index.html" class="wide-logo"><span>Jydon Mah</span></a>
                     <nav class="menu-container">
                         <ul class="menu">
-                            <li class="menu-item">
+                            <li class="menu-item menu-about">
                                 <a href="#about">About</a>
                             </li>
-                            <li class="menu-item">
+                            <li class="menu-item menu-works">
                                 <a href="#works">Works</a>
                             </li>
-                            <li class="menu-item">
+                            <li class="menu-item menu-experience">
+                                <a href="#works">Experience</a>
+                            </li>
+                            <li class="menu-item menu-contact">
                                 <a href="#footer">Contact</a>
                             </li>
                         </ul>
@@ -41,13 +44,16 @@
         </div>
         <div class="mobile-menu">
             <ul class="menu">
-                <li class="menu-item">
+                <li class="menu-item menu-about">
                     <a href="#about">About</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item menu-works">
                     <a href="#works">Works</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item menu-experience">
+                    <a href="#footer">Experience</a>
+                </li>
+                <li class="menu-item menu-contact">
                     <a href="#footer">Contact</a>
                 </li>
             </ul>
@@ -63,13 +69,90 @@
                             <div class="info">
                                 <h3 class="title">Jydon Mah</h3>
                                 <h5 class="subtitle">Web Developer</h5>
-                                <p class="description">My name is Jydon Banzon Mah Jr., I am a web developer that create functional and elegant websites. I've been helping clients create their amazing projects using latest web technologies and frameworks. I always practice coding standards that will help my clients and team make their projects manageable and maintenable.</p>
+                                <p class="description">Hi I'm Jydon B Mah Jr., I am a web developer who specialized on frontend development currently based in Philippines. I love creating functional websites using latest web technology to help client deliver their projects and innovate their new and existing system. I've been coding for almost ++ of years.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="works">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="works-container">
+                            <div class="works-card">
+                                <div class="card-icon">
+<!--                                    <img src="images/intagent_icon.png" alt="">-->
+                                    <a href="https://www.intagent.com/" target="_blank">
+                                        <img src="images/intagent_label.png" alt="">
+                                    </a>
+                                </div>
+                                <h4>Coder</h4>
+                                <p>A part time web developer as Junior Web Developer. Function as creating elegant realstate website through slicing PSD to HTML using latest web technology such as, HTML5, CSS3, Javascript, jQuery, Bootstrap, and many more..</p>
+                            </div>
+                            <div class="works-card">
+                                <div class="card-icon">
+                                    <a href="https://apps.fastlogistics.com.ph/" target="_blank">
+                                        <img src="images/FastLogo.png" alt="">
+                                    </a>
+                                    <h4>Coder / Support</h4>
+                                    <p>A former Operations Engineer at Fast Services Corporation and currently an IT Programmer/Analyst. I code and support functional application and created system feature such as dashboard for monitoring using angular and reactjs.</p>
+                                </div>
+                            </div>
+                            <div class="works-card">
+                                <div class="card-icon">
+                                    <a href="https://www.timelessmedical.com/" target="_blank">
+                                        <img src="images/TimelessMedicalSystems-w.png" style="background-color: #0761c6;" alt="">
+                                    </a>
+                                    <h4>Coder / Support</h4>
+                                    <p>I develop applications using Laravel, Vuejs, javascript, php, and also Support Timeless System Applications</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h3 class="title">Why hire me?</h3>
+                        <p>I've done remote work for agencies, startups, and collaborated with talented people to create digital products for both business and consumer use.</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="exp-lists">
+                            <div class="list">
+                                <h4 class="title">Intermediate Web Developer</h4>
+                                <span class="date">Timeless Medical System | July 2018 - Current</span>
+                            </div>
+                            <div class="list">
+                                <h4 class="title">IT Programmer/Analyst</h4>
+                                <span class="date">Fast Services | January 2017 - June 2018</span>
+                            </div>
+                            <div class="list">
+                                <h4 class="title">Junior Developer</h4>
+                                <span class="date">Intagent (Part Time)| August 2017 - November 2017</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>Just say hi! I wont bite :)</p>
+                        <h3 class="title"><a href="mailto:jydon.mah11@gmail.com">jydon.mah11@gmail.com</a></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script type="text/javascript">
             $('.mobile-menu-hamburger').click(function(){
@@ -77,7 +160,7 @@
                 $('.mobile-menu').toggleClass('is-click');
             });
 
-            $(window).scroll(function() {    
+            $(window).scroll(function() {
                 var scroll = $(window).scrollTop();
 
                 if (scroll >= 100) {
@@ -86,6 +169,44 @@
                     $(".header").removeClass("header-shadow-bottom");
                 }
             });
-        </script>
+
+            $(".menu-about").click(function() {
+                event.preventDefault()
+                $('html, body').animate({
+                    scrollTop: $(".about").offset().top
+                }, 1000);
+
+                $(".mobile-menu, .mobile-menu-hamburger").removeClass("is-click");
+            });
+
+            $(".menu-works").click(function() {
+                event.preventDefault()
+                $('html, body').animate({
+                    scrollTop: $(".works").offset().top
+                }, 1000);
+
+                $(".mobile-menu, .mobile-menu-hamburger").removeClass("is-click");
+            });
+
+            $(".menu-experience").click(function() {
+                event.preventDefault()
+                $('html, body').animate({
+                    scrollTop: $(".experience").offset().top
+                }, 1000);
+
+                $(".mobile-menu, .mobile-menu-hamburger").removeClass("is-click");
+            });
+
+            $(".menu-contact").click(function() {
+                event.preventDefault()
+                $('html, body').animate({
+                    scrollTop: $(".contact").offset().top
+                }, 1000);
+
+                $(".mobile-menu, .mobile-menu-hamburger").removeClass("is-click");
+            });
+
+
+    </script>
     </body>
 </html>

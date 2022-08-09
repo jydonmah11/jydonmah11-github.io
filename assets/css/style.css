@@ -10406,6 +10406,68 @@ h1, h2, h3, h4, h5, p, .logo {
   letter-spacing: .7px;
 }
 
+/*WORKS*/
+.works{
+  padding: 10rem 0 4rem;
+  background-color: #f2f2f2;
+}
+
+.works-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.works-card{
+  display: flex;
+  max-width: 300px;
+  width: auto;
+  padding: 40px;
+  flex-direction: column;
+  margin: 0 1.5% 2rem;
+  border-radius: 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.works-container .works-card img{
+  width: 200px;
+}
+
+.works-container .works-card h4{
+  margin-top: 40px;
+  margin-bottom: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #252f52;
+}
+
+.experience{
+  padding: 10rem 0 4rem;
+  text-align: center;
+}
+
+.exp-lists .list{
+  margin-bottom: 3rem;
+}
+.exp-lists .list h4.title{
+  margin-bottom: 0;
+}
+
+.exp-lists .list .date{
+  color: #797b82;
+  font-family: Poppins,sans-serif;
+  font-size: .8rem;
+  letter-spacing: 1px;
+}
+
+.contact{
+  padding: 10rem 0 4rem;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
 @media only screen and (min-width: 768px){
   .logo{
     display: none;
@@ -10437,10 +10499,6 @@ h1, h2, h3, h4, h5, p, .logo {
     background-size: 325px;
   }
 
-  .title{
-    font-size: 2.8rem;
-  }
-
   .image{
     margin-right: 35px;
   }
@@ -10448,6 +10506,19 @@ h1, h2, h3, h4, h5, p, .logo {
   .info{
     flex-grow: 1;
     padding-right: 370px;
+    text-align: left;
+  }
+
+  .works-container{
+    flex-direction: row;
+    align-items: inherit;
+  }
+
+  .title{
+    font-size: 1.5rem;
+  }
+
+  .experience{
     text-align: left;
   }
 }
