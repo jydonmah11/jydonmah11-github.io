@@ -10448,6 +10448,10 @@ h1, h2, h3, h4, h5, p, .logo {
   text-align: center;
 }
 
+.experience p{
+  margin-bottom: 2rem;
+}
+
 .exp-lists .list{
   margin-bottom: 3rem;
 }
@@ -10516,6 +10520,10 @@ h1, h2, h3, h4, h5, p, .logo {
 
   .experience{
     text-align: left;
+  }
+
+  .experience p{
+    margin-bottom: 1rem;
   }
 }
 
