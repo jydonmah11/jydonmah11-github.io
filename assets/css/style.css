@@ -10386,7 +10386,7 @@ h1, h2, h3, h4, h5, p, .logo {
 
 .title{
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #252f52;
 
@@ -10512,10 +10512,6 @@ h1, h2, h3, h4, h5, p, .logo {
   .works-container{
     flex-direction: row;
     align-items: inherit;
-  }
-
-  .title{
-    font-size: 1.5rem;
   }
 
   .experience{
